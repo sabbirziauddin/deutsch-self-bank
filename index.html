@@ -10,7 +10,7 @@
 </head>
 <body>
    
-   <div class="login-area">
+   <div id="login-area">
       <h1 class="text-center">Welcome to our online Banking</h1>
       <div class="submit-area">
          <h4 style="color: red;">Login</h4>
@@ -22,10 +22,39 @@
          <button id="login-btn" class="btn btn-success">Enter</button>
       </div>
    </div>
+   <div class="transaction-area" id="transaction-area">
+      <div class="row">
+         <div class="col-md-4">
+            <div class="deposit Status">
+               <h5>Deposit</h5>
+               <h2>$00</h2>
+            </div>
+            
+         </div>
+         <div class="col-md-4">
+            <div class="withdraw Status"> 
+               <h5> Withdraw</h5>
+               <h2>$00</h2>
+            </div>
+           
+         </div>
+         <div class="col-md-4">
+            <div class="balance `"> 
+               <h5>Balance</h5>
+               <h2>$1000</h2>
+            </div>
+           
+         </div>
+      </div>
+   </div>
    <script>
-         var myBtn = document.getElementById("login-btn");
+         const myBtn = document.getElementById("login-btn");
          myBtn.addEventListener("click", function(){
-            console.log("clicked")      
+            const myLogin = document.getElementById("login-area");
+            myLogin.style.display = "none";
+            const transArea = document.getElementById("transaction-area");
+            transArea.style.display = "block"
+               
              })
 
 
