@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-   <title>Online Bank</title>
+    <title>Online Bank</title>
 </head>
-<body>
-   
-   <div id="login-area">
-      <h1 class="text-center">Welcome to our online Banking</h1>
-      <div class="submit-area">
-         <h4 style="color: red;">Login</h4>
-         <input type="text" class="form-control" placeholder="Your Email">
-         <br>
-         <input type="password" class="form-control" placeholder="Password">
-         <br>
 
-         <button id="login-btn" class="btn btn-success">Enter</button>
-      </div>
-   </div>
-   <div class="transaction-area" id="transaction-area">
-      <div class="row">
-         <div class="col-md-4">
-            <div class="deposit Status">
-               <h5>Deposit</h5>
-               <h2>$00</h2>
+<body>
+
+    <div id="login-area">
+        <h1 class="text-center">Welcome to our online Banking</h1>
+        <div class="submit-area">
+            <h4 style="color: red;">Login</h4>
+            <input type="text" class="form-control" placeholder="Your Email">
+            <br>
+            <input type="password" class="form-control" placeholder="Password">
+            <br>
+
+            <button id="login-btn" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+    <div class="transaction-area" id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit Status">
+                    <h5>Deposit</h5>
+                    <h2>$00</h2>
+                </div>
+
             </div>
-            
-         </div>
-         <div class="col-md-4">
-            <div class="withdraw Status"> 
-               <h5> Withdraw</h5>
-               <h2>$00</h2>
+            <div class="col-md-4">
+                <div class="withdraw Status">
+                    <h5> Withdraw</h5>
+                    <h2>$00</h2>
+                </div>
+
             </div>
-           
-         </div>
-         <div class="col-md-4">
-            <div class="balance `"> 
-               <h5>Balance</h5>
-               <h2>$1000</h2>
+            <div class="col-md-4">
+                <div class="balance  Status">
+                    <h5>Balance</h5>
+                    <h2>$1000</h2>
+                </div>
+
             </div>
-           
-         </div>
-      </div>
-   </div>
-   <script>
-         const myBtn = document.getElementById("login-btn");
-         myBtn.addEventListener("click", function(){
+        </div>
+    </div>
+    <script>
+        const myBtn = document.getElementById("login-btn");
+        myBtn.addEventListener("click", function() {
             const myLogin = document.getElementById("login-area");
             myLogin.style.display = "none";
             const transArea = document.getElementById("transaction-area");
             transArea.style.display = "block"
-               
-             })
 
-
-   </script>
+        })
+    </script>
 </body>
+
 </html>
